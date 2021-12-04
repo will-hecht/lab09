@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<script type="text/javascript" src="formChecker.js"></script>
+	</head>
+	<body>
+		<link href="lab9exercise3style.css" rel="stylesheet" type="text/css"/>
+		<form name = "myForm" action = "customerBackend.php" method = "post" onsubmit = "return formCheck()">
+			<p class = "title">Will's Burger Shipping Co.</p>
+			<img id="BurgerImage" src="burger.jpg" height="150" width = "250"><br><br>
+			<input type =  "text" id = "Burgers" name = "burgers" value = "0">
+			<label for = "Burgers">Cheeseburgers ($7)</label><br><br>
+			<img id="BurgerImage" src="fries.jpg" height="150" width = "250"><br><br>
+			<input type =  "text" id = "Fries" name = "fries" value = "0">
+			<label for = "Fries">Fries ($3)</label><br><br>
+			<img id="BurgerImage" src="drinks.png" height="150" width = "250"><br><br>
+			<input type =  "text" id = "Drinks" name = "drinks" value = "0">
+			<label for = "Drinks">Drinks ($2)</label><br><br>
+
+			<p>Shipping Options</p>
+			<input type =  "radio" id = "FreeShipping" name = "shipping" value = "free">
+			<label for = "FreeShipping">Free Seven Day</label><br>
+			<input type =  "radio" id = "ThreeDay" name = "shipping" value = "three">
+			<label for = "ThreeDay"> $5 Three Day</label><br>
+			<input type =  "radio" id = "Overnight" name = "shipping" value = "overnight">
+			<label for = "Overnight">$50 Overnight</label><br>
+
+			<p>User Information</p>
+			<input type =  "email" id = "Username" name = "username" value = "example@email.com" pattern = ".+\.com$">
+			<label for = "Username">Username (Email)<label><br>
+			<input type =  "text" id = "Password" name = "password" value = "Password">
+			<label for = "Password">Password</label><br><br>
+
+			<input type = "submit" value = "Submit">
+			<input type = "reset">
+		</form>
+	</body>
+</html>
